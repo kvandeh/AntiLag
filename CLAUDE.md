@@ -48,7 +48,16 @@ AntiLag/
   AntiLagConfiguration.cs  Rocket XML config (thresholds, multiplier, notify)
   PlayerLagState.cs        per-player data: last input time, last gap, positions, strikes
   AntiLagCommand.cs        /antilag — list flagged players with strike counts
+  DiscordWebhook.cs        multipart POST: embed + spy.jpg attachment
 ```
+
+## Discord flag flow
+
+On flag (throttled to one notification per suspect per 10 s):
+`player.sendScreenshot(CSteamID.Nil, callback)` requests a client screenshot; `Nil`
+destination means no client relay — the server callback gets the jpg (≤ 40 KB) and
+posts it with the report to `DiscordWebhookUrl`. Strikes keep counting during the
+throttle window; only notifications are suppressed.
 
 ## Conventions
 

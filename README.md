@@ -30,6 +30,7 @@ against targets that had no chance to react. This plugin makes that visible.
 | `SuspicionWindowSeconds` | `3` | Damage within this window after a gap is flagged |
 | `DamageMultiplier` | `1.0` | Damage scale on flagged hits (`1.0` = flag only) |
 | `NotifyAdmins` | `true` | Send flag messages to online admins |
+| `DiscordWebhookUrl` | *(empty)* | If set, flags post to Discord as an embed with a live `/spy` screenshot of the suspect attached |
 
 ## Commands
 

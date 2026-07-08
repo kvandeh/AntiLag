@@ -11,4 +11,8 @@
     <PackageReference Include="RestoreMonarchy.RocketRedist" Version="3.*" ExcludeAssets="runtime" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
 </Project>
