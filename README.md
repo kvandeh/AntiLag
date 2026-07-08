@@ -40,7 +40,7 @@ against targets that had no chance to react. This plugin makes that visible.
 
 ## Install
 
-1. `dotnet build -c Release`
+1. `dotnet build -c Release` (or grab `AntiLag.dll` from the latest GitHub Release)
 2. Copy `AntiLag/bin/Release/net48/AntiLag.dll` to `Servers/<server>/Rocket/Plugins/`
 3. Restart or `/rocket reload`
 
